@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Reservations</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Website for Pacific Trails Resort-Reservations page with contact form"/>
+    <link rel="stylesheet" type="text/css" href="pacific.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico"/>
+</head>
+    
+<body>
+    <div class="wrapper">
+        <h1>Pacific Trails Resort</h1>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <br>
+            <h2>Reservations</h2>  
+            <br><br>
+                        
+            <form method="post" id="myForm" action="contact.php">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+        
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+                
+            <div>
+                <label for="telNber">Telephone:</label>
+                <input type="tel" name="telNber" id="telNber" maxlength="13">
+            </div>
+                
+            <div>
+                <label for="number">Guests:</label>
+                <input type="number" name="number" id="number" maxlength="2" placeholder="Enter number of guests">
+            </div>
+        
+            <div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="2" cols="20"></textarea>
+            </div>
+        
+            <br>
+                
+            <div id="mySubmit">
+                <input type="submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </div>                
+            </form>
+            
+            <br>
+            
+            <div class="footer">
+                <p>Copyright &copy; 2011 Pacific Trails Resort<br>
+                   webmaster Thierry Spelle</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

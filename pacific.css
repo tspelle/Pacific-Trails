@@ -1,0 +1,93 @@
+body {background-image:url('background.jpg'); font-family:Arial, Helvetica, sans-serif; background-color:white}
+
+dt {font-weight:bold}
+
+h1 {background:url('sunset.jpg') no-repeat top right; background-color:#000033; color:white; font-family:Georgia,
+    "Times New Roman", serif; margin-bottom:0; }
+
+h2 {color:#3399CC; font-family:Georgia, "Times New Roman", serif; text-shadow: 3px 3px 3px gray}
+
+h3 {color:#000033; font-family:Georgia, "Times New Roman", serif}
+
+input, textarea { margin-top: 10px; }
+
+label {float:left; width: 120px; text-align:right; padding-right:10px; margin-top:10px}
+
+nav {float: left; width: 120px; margin-right:20px; font-size:1.2em}
+nav ul {list-style-type:none; font-weight:bold; padding-left: 0; padding-top: 0; margin-top: 0}
+
+a {text-decoration:none}
+a:link {color:#000033}
+a:visited {color:#344873}
+a:hover {color:white}
+
+#contact {font-size:90%}
+
+#mySubmit {margin-left: 130px; padding-bottom: 10px; }
+
+#listpos {list-style-position:inside}
+
+.content {margin-left: 125px}
+
+.footer {font-size:75%; font-style:italic; font-family:Georgia, "Times New Roman", Times, serif}
+
+.imageleft {float:left; margin-right:20px; margin-bottom:10px}
+
+.resort {color:#000033; font-weight:bold}
+
+.textsize {font-size:75%}
+
+.wrapper {background-color:#90C7E3; box-shadow: 4px 4px 2px; width:80%; margin:auto; min-width:960px}
+
+
+/* Little bird flying from left to right */
+@keyframes mybanner
+{
+0%    {left:0px; top:0px;}
+80%  {left:2000px; top:0px;}
+}
+
+@-moz-keyframes mybanner            /* Firefox */
+{
+0%    {left:0px; top:0px;}
+80%  {left:2000px; top:0px;}
+}
+
+@-webkit-keyframes mybanner         /* Safari and Chrome */
+{
+0%    {left:0px; top:0px;}
+100%  {left:2000px; top:0px;}
+} 
+
+#banner
+{
+width:300px;
+height:75px;
+position:relative;
+    
+/* animation part */
+animation-name: mybanner;
+animation-duration: 15s;
+animation-timing-function: ease-out;
+animation-delay: 0s;
+animation-iteration-count:1 ;
+animation-direction: normal;
+animation-play-state: running;
+
+-moz-animation-name: mybanner;         /* Firefox */
+-moz-animation-duration: 15s;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 0s;
+-moz-animation-iteration-count:1;
+-moz-animation-direction: normal;
+-moz-animation-play-state: running;
+
+-webkit-animation-name: mybanner;       /* Safari and Chrome */
+-webkit-animation-duration: 15s;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-delay: 0s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction: normal;
+-webkit-animation-play-state: running;
+
+} 
